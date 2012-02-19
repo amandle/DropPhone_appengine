@@ -1,0 +1,107 @@
+body {
+  background: #333;
+  padding:0;
+  margin:0;
+  font-family: "Helvetica Neue",Helvetica, sans-serif;
+  font-weight: 200;
+  color: #ddd;
+}
+a {
+  color: #eee;
+}
+
+.clearfix {
+  clear: both;
+}
+div.header {
+  width:100%;
+  font-weight: 200;
+  font-size:50px;
+  min-width: 740px;
+}
+div.fullWidth {
+  width: 100%;
+}
+div.content {
+  width:740px;
+  margin: auto;
+}
+h1 {
+  font-weight: 200;
+  font-size:50px;
+}
+h2 {
+  font-weight: 200;
+  font-size: 34px;
+
+}
+
+div.downloadButton{
+  background: #c9de96; /* Old browsers */
+  background: -moz-linear-gradient(top,  #c9de96 0%, #8ab66b 44%, #398235 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c9de96), color-stop(44%,#8ab66b), color-stop(100%,#398235)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #c9de96 0%,#8ab66b 44%,#398235 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #c9de96 0%,#8ab66b 44%,#398235 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #c9de96 0%,#8ab66b 44%,#398235 100%); /* IE10+ */
+  background: linear-gradient(top,  #c9de96 0%,#8ab66b 44%,#398235 100%); /* W3C */
+  box-shadow: 0 0 10px #555;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9de96', endColorstr='#398235',GradientType=0 ); /* IE6-9 */
+  width:200px;
+  text-align: center;
+  padding:30px;
+  border-radius: 5px;
+  color: black;
+  margin-left:0;
+}
+div.left {
+  float:left;
+}
+div.left img{
+  margin-left:-40px
+
+}
+div.right {
+  width:350px;
+  float:left;
+}
+div.linkholder ul {
+  padding:0;
+  margin:10px;
+}
+div.linkholder li {
+  padding-top: 30px;
+  list-style-type: none;
+}
+
+
+
+/*asdfasdfasdfasdfasdfasdfasdf*/
+div.grayLeft {
+  height:100%;
+  min-height:500px;
+  background: #555;
+  width:360px;
+  float:left;
+}
+div.grayLeft img {
+  left:-20px;
+  top:100px;
+  position: relative
+}
+div.frontRight {
+  float:left;
+  width:360px;
+}
+
+div.heading {
+  font-weight: 200;
+  font-size:50px;
+  margin-left:10px;
+  width:px;
+}
+div.descriptionText {
+  padding:10px;
+}
+td, th {
+  padding: 5px 10px 5px 0px;
+}

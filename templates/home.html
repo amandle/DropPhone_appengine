@@ -1,0 +1,53 @@
+<html>
+<head>
+  <title>DropPhone</title>
+  <link rel='stylesheet' type='text/css' href="/static/stylesheets/main.css?{{ APP_VERSION }}"/>
+  <script type="text/javascript" src="/static/javascript/jquery-1.7.1.min.js"></script>
+</head>
+<body>
+  <div class="content">
+    <div class='grayLeft'>
+      <img src="/static/images/dropphonesmall.png" alt="">
+    </div>
+    <div class='frontRight'>
+      <div class="heading">DropPhone</div>
+      <div class="descriptionText">
+        Compete with DropPhone players world wide to see whose phone can free fall for the longest... and
+        survive.
+      </div>
+      <div class="linkholder">
+        <ul>
+
+          <li>
+            <div class='downloadButton'>Get the App!</div>
+          </li>
+          <li>
+            <h3>Highscores</h3>
+            <table>
+              <tr>
+                <th>Rank</th>
+                <th>Username</th>
+                <th>Score</th>
+              </tr>
+              {% for score in top_scores %}
+              <tr>
+                <td>{{ forloop.counter }}</td>
+                <td>{{ score.username }}</td>
+                <td>{{ score.score|floatformat }} ms</td>
+              </tr>
+              {% endfor %}
+            </table>
+            <a href="/leaderboard">more highscores</a><br/>
+          </li>
+          <li>
+            <a href="/about">About DropPhone</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

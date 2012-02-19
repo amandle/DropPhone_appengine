@@ -1,0 +1,22 @@
+<html>
+<head>
+  <title>{% block title %}{%endblock%}</title>
+  <link rel='stylesheet' type='text/css' href="/static/stylesheets/main.css?{{ APP_VERSION }}"/>
+  <script type="text/javascript" src="/static/javascript/jquery-1.7.1.min.js"></script>
+  {% block javascript %}
+  {% endblock %}
+  <style type="text/css">
+    {% block css %}
+    {% endblock %}
+  </style>
+</head>
+<body>
+{% include 'header.html' %}
+<div class='fullWidth'>
+  <div class="content">
+    {% block main %}
+    {% endblock %}
+  </div>
+</div>
+</body>
+</html>
