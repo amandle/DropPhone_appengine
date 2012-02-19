@@ -1,0 +1,1 @@
+SHARED_SECRET = "Phasuca6a4eCRU84b7eVUnA55asWaspazEDuw4maDRUS8uhE5AsuwE7aPUTe6ru9"
