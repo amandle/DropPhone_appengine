@@ -2,7 +2,6 @@
 <head>
   <title>{% block title %}{%endblock%}</title>
   <link rel='stylesheet' type='text/css' href="/static/stylesheets/main.css?{{ APP_VERSION }}"/>
-  <script type="text/javascript" src="/static/javascript/jquery-1.7.1.min.js"></script>
   {% block javascript %}
   {% endblock %}
   <style type="text/css">
@@ -18,5 +17,19 @@
     {% endblock %}
   </div>
 </div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29327865-1']);
+  _gaq.push(['_setDomainName', 'dropphoneapp.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 </body>
 </html>
