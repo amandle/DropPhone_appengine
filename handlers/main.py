@@ -30,15 +30,15 @@ class ScoreHandler(BaseHandler):
     score = float(string_score)
     hash = self.request.get('hash')
 
-    # verify the has
-    sha = hashlib.sha1()
-    sha.update(username)
-    sha.update(string_score)
-    sha.update(config.SHARED_SECRET)
-    calcedhash = sha.hexdigest()
+    # verify the hash
+    md5 = hashlib.md5()
+#    sha.update(username)
+    md5.update(string_score)
+    md5.update(config.SHARED_SECRET)
+    calcedhash = md5.hexdigest()
     if calcedhash != hash:
       logging.info('THE HASHES DO NOT MATCH ' + calcedhash + ' and ' + hash)
-      # fake response
+#      fake response
       response = {
         'rank': random.randint(1,9999)
       }
@@ -49,7 +49,7 @@ class ScoreHandler(BaseHandler):
 
 
     s = ScoreEntry(
-      score=float(score),
+      score=score,
       username=username,
     )
     s.put()

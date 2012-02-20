@@ -53,6 +53,12 @@ div.downloadButton{
   color: black;
   margin-left:0;
 }
+
+div.downloadButton:hover{
+  background: #8ab66b; /* Old browsers */
+
+}
+
 div.left {
   float:left;
 }
@@ -78,7 +84,7 @@ div.linkholder li {
 /*asdfasdfasdfasdfasdfasdfasdf*/
 div.grayLeft {
   height:100%;
-  min-height:500px;
+  min-height:1000px;
   background: #555;
   width:360px;
   float:left;
@@ -89,6 +95,7 @@ div.grayLeft img {
   position: relative
 }
 div.frontRight {
+  margin-left:10px;
   float:left;
   width:360px;
 }
@@ -108,4 +115,12 @@ td, th {
 div.header a {
   text-decoration: none;
   cursor: pointer;
+}
+a.buttonlink {
+  text-decoration: none;
+}
+
+img.inMarket {
+  padding-top:30px;
+  margin:10px;
 }
